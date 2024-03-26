@@ -1,0 +1,802 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+html {
+  font-size: 65%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #ff7800;
+  border-radius: 5rem;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.button {
+  display: inline-block;
+  margin-bottom: 3rem;
+  padding: .8rem 1.5rem;
+  border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  background: none;
+  font-size: 1.8rem;
+  color: #130f40;
+  border-radius: 1rem;
+  font-family: 'Merienda One', sans-serif;
+}
+
+.button:hover {
+  background: #ff7800;
+  color: #fff;
+}
+
+.heading {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.heading span {
+  font-size: 3rem;
+  color: #ff7800;
+  background: rgba(255, 165, 0, 0.2);
+  padding: .2rem 1rem;
+  border-radius: 1rem;
+  margin-right: .5rem;
+  font-family: 'Merienda One', sans-serif;
+}
+
+.heading span.space {
+  background: none;
+}
+
+.header {
+  background: url("/assets/home-bg.webp") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header .top-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 5%;
+  z-index: 1000;
+}
+
+.header .top-header.fixed {
+  background: #fff;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.header .top-header .logo {
+  font-size: 2.5rem;
+  color: #130f40;
+  font-family: 'Merienda One', sans-serif;
+}
+
+.header .top-header .logo i {
+  color: #ff7800;
+  margin-right: .3rem;
+}
+
+.header .top-header .navbar-links a {
+  color: #130f40;
+  font-size: 1.8rem;
+  padding: 0 1rem;
+}
+
+.header .top-header .navbar-links a:hover {
+  color: #ff7800;
+}
+
+.header .top-header .search-form {
+  position: fixed;
+  top: -110%;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.header .top-header .search-form.display {
+  top: 0;
+}
+
+.header .top-header .search-form .fa-times {
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #fff;
+}
+
+.header .top-header .search-form .fa-times:hover {
+  color: #ff7800;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.header .top-header .search-form .search-box {
+  padding: 1rem 1.5rem;
+  color: #fff;
+  font-size: 1.8rem;
+  background: none;
+  border-bottom: 0.2rem solid #ff7800;
+  width: 50rem;
+}
+
+.header .top-header .search-form label {
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 0 1.5rem;
+  -webkit-text-stroke: 0.1rem #ff7800;
+}
+
+.header .top-header .search-form label:hover {
+  color: #ff7800;
+}
+
+.header .top-header .icons div {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  border-radius: 50%;
+  background: #ff7800;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  margin-left: .5rem;
+}
+
+.header .top-header .icons div:hover {
+  background: #130f40;
+}
+
+.header .top-header .icons div.fa-search:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.header .bottom-header {
+  padding-top: 17rem;
+  padding-bottom: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .bottom-header .content {
+  text-align: center;
+}
+
+.header .bottom-header .content h3 {
+  font-size: 3rem;
+  color: #130f40;
+}
+
+.header .bottom-header .content h3 span {
+  color: #ff7800;
+  font-family: 'Merienda One', sans-serif;
+}
+
+.header .bottom-header .content p {
+  font-size: 1.5rem;
+  color: #666;
+  line-height: 1.8;
+  width: 50rem;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.header .bottom-header .content .button {
+  width: 20rem;
+}
+
+#navbar-button {
+  display: none;
+}
+
+.category .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.category .box-container .box {
+  border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  background: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.category .box-container .box img {
+  height: 15rem;
+}
+
+.category .box-container .box h3 {
+  font-size: 2rem;
+  color: #130f40;
+}
+
+.category .box-container .box p {
+  color: #666;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding: 1rem 0;
+}
+
+.products .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.products .box-container .box {
+  position: relative;
+  border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.products .box-container .box:hover .image img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.products .box-container .box .like {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  -webkit-text-stroke: 0.1rem #ff7800;
+  color: #fff;
+}
+
+.products .box-container .box .like:hover, .products .box-container .box .like.liked {
+  color: #ff7800;
+}
+
+.products .box-container .box .discount {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  font-family: 'Merienda One', sans-serif;
+  background: #ff7800;
+  color: #130f40;
+  -webkit-clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+          clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+  font-size: 1.5rem;
+  padding: .5rem 1.2rem;
+}
+
+.products .box-container .box .image {
+  margin-top: 2rem;
+}
+
+.products .box-container .box .image img {
+  height: 15rem;
+  width: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.products .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #130f40;
+}
+
+.products .box-container .box .content p {
+  font-size: 1.5rem;
+  color: #666;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+.products .box-container .box .content .button {
+  margin-top: 1rem;
+  width: 20rem;
+}
+
+.products .box-container .box .content .stars i {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  -webkit-text-stroke: 0.1rem #ff7800;
+}
+
+.products .products-detail {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+  display: none;
+}
+
+.products .products-detail .box {
+  position: relative;
+  width: 80rem;
+  background: #fff;
+  border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin: 3rem;
+  margin-top: 10rem;
+  display: none;
+}
+
+.products .products-detail .box.display {
+  display: block;
+}
+
+.products .products-detail .box .fa-times {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: #130f40;
+  font-size: 2.5rem;
+}
+
+.products .products-detail .box .fa-times:hover {
+  color: #ff7800;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.products .products-detail .box h3 {
+  color: #ff7800;
+  padding: 1rem 0;
+  font-size: 3rem;
+  font-family: 'Merienda One', sans-serif;
+}
+
+.products .products-detail .box p {
+  font-size: 1.5rem;
+  color: #666;
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+.products .products-detail .box .stars {
+  padding: 1rem 0;
+}
+
+.products .products-detail .box .stars i {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  -webkit-text-stroke: 0.1rem #ff7800;
+}
+
+.features .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.features .box-container .box {
+  text-align: center;
+  padding: 3rem 2rem;
+  border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  background: #fff;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.features .box-container .box:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.features .box-container .box img {
+  height: 15rem;
+}
+
+.features .box-container .box h3 {
+  color: #130f40;
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+.features .box-container .box p {
+  color: #666;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+.blogs .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 1.5rem;
+}
+
+.blogs .box-container .box {
+  overflow: hidden;
+  text-align: center;
+}
+
+.blogs .box-container .box:hover .image img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.blogs .box-container .box .image {
+  width: 90%;
+  height: 25rem;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: -3rem;
+}
+
+.blogs .box-container .box .image img {
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blogs .box-container .box .content {
+  padding: 2rem;
+  padding-top: 5rem;
+  background: #fff;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+.blogs .box-container .box .content .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 0.2rem solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 1rem;
+}
+
+.blogs .box-container .box .content .flex div {
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+}
+
+.blogs .box-container .box .content .flex div:hover {
+  color: #ff7800;
+}
+
+.blogs .box-container .box .content .flex div i {
+  color: #ff7800;
+  margin-right: .5rem;
+}
+
+.blogs .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #130f40;
+  margin-top: 2rem;
+}
+
+.blogs .box-container .box .content p {
+  color: #666;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+.blogs .box-container .box .content .button {
+  width: 20rem;
+}
+
+.contact .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact .flex form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  background: #fff;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.contact .flex form h3 {
+  font-size: 3em;
+  color: #ff7800;
+  font-family: 'Merienda One', sans-serif;
+  padding-bottom: 1rem;
+}
+
+.contact .flex form .box {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  border-bottom: 0.2rem solid rgba(0, 0, 0, 0.1);
+  font-size: 1.8rem;
+  color: #130f40;
+  text-transform: none;
+  margin: 1rem 0;
+}
+
+.contact .flex form .box:focus {
+  border-color: #ff7800;
+}
+
+.contact .flex form textarea {
+  height: 15rem;
+  resize: none;
+}
+
+.contact .flex form textarea:focus {
+  border-color: #ff7800;
+}
+
+.contact .flex form .button {
+  margin-top: 1rem;
+  width: 20rem;
+}
+
+.contact .flex .map {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.footer {
+  background: rgba(255, 165, 0, 0.2);
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box .logo {
+  font-size: 2.5rem;
+  color: #130f40;
+  font-family: 'Merienda One', sans-serif;
+}
+
+.footer .box-container .box .logo i {
+  color: #ff7800;
+}
+
+.footer .box-container .box p {
+  color: #666;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  padding: 1rem 0;
+  width: 40rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2rem;
+  color: #130f40;
+  padding: 1rem 0;
+  font-family: 'Merienda One', sans-serif;
+}
+
+.footer .box-container .box .link {
+  display: block;
+  font-size: 1.5em;
+  padding: 1rem 0;
+  color: #666;
+}
+
+.footer .box-container .box .link:hover i {
+  padding-right: 1.5rem;
+}
+
+.footer .box-container .box .link i {
+  padding-right: .8rem;
+  color: #ff7800;
+}
+
+.footer .credit {
+  border-top: 0.2rem solid #ff7800;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  color: #666;
+  text-align: center;
+}
+
+.footer .credit i {
+  color: red;
+}
+
+.footer .credit span {
+  color: #ff7800;
+  cursor: pointer;
+  font-family: 'Merienda One', sans-serif;
+}
+
+@media (max-width: 950px) {
+  .products-detail .box {
+    width: 80rem;
+    overflow: scroll;
+  }
+  .products-detail .box::-webkit-scrollbar {
+    width: 1rem;
+  }
+  .products-detail .box::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .products-detail .box::-webkit-scrollbar-thumb {
+    background: #ff7800;
+    border-radius: 5rem;
+  }
+  .products-detail .box img {
+    width: 15rem;
+    height: 15rem;
+  }
+  .products-detail .box .content h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+  .heading span {
+    font-size: 2rem;
+  }
+  #navbar-button {
+    display: inline-block;
+  }
+  .header .top-header .search-form .search-box {
+    width: 80%;
+  }
+  .header .top-header .navbar-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    border-top: 0.2rem solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0.2rem solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .top-header .navbar-links.display {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .header .top-header .navbar-links a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background: #eee;
+  }
+  .header .top-header .navbar-links a:hover {
+    background: #ff7800;
+    color: #fff;
+  }
+  .header .bottom-header {
+    padding-bottom: 5rem;
+    padding-top: 13rem;
+  }
+  .header .bottom-header .content h3 {
+    font-size: 2rem;
+  }
+  .header .bottom-header .content p {
+    width: 40rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
