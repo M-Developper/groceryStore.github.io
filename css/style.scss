@@ -83,7 +83,7 @@ section {
 }
 
 .header {
-    background: url('home-bg.webp') no-repeat;
+    background: url('/assets/home-bg.webp') no-repeat;
     background-position: center;
     background-size: cover;
     .top-header {
@@ -287,6 +287,10 @@ section {
                     font-size: 2rem;
                     color: $black;
                 }
+                .price {
+                    color: $black;
+                    font-size: 1.4rem;
+                }
                 p {
                     font-size: 1.5rem;
                     color: $light-color;
@@ -342,11 +346,19 @@ section {
                     transform: rotate(360deg);
                 }
             }
+            img {
+                height: 30rem;
+                object-fit: contain;
+            }
             h3 {
                 color: $orange;
                 padding: 1rem 0;
                 font-size: 3rem;
                 font-family: 'Merienda One', sans-serif;
+            }
+            .price {
+                font-size: 1.5rem;
+                color: $black;
             }
             p {
                 font-size: 1.5rem;
@@ -458,9 +470,6 @@ section {
                     line-height: 1.8;
                     padding: 1rem 0;
                 }
-                .button {
-                    width: 20rem;
-                }
             }
         }
     }
@@ -518,7 +527,7 @@ section {
 .footer {
     background: rgba(255, 165, 0, .2);
     .box-container {
-        @include gridView(30rem);
+        @include gridView(40rem);
         .box {
             .logo {
                 font-size: 2.5rem;
@@ -526,6 +535,28 @@ section {
                 font-family: 'Merienda One', sans-serif;
                 i {
                     color: $orange;
+                }
+            }
+            form {
+                .input-box {
+                    width: 80%;
+                    padding: 1rem 1.2rem;
+                    margin: 1rem 0;
+                    border: $border;
+                    border-radius: 1rem;
+                    background: none;
+                    color: $black;
+                    font-size: 1.8rem;
+                    text-transform: none;
+                    &:focus {
+                        background: $white;
+                    }
+                    &::placeholder {
+                        color: $black;
+                    }
+                }
+                .button {
+                    width: 20rem;
                 }
             }
             p {
