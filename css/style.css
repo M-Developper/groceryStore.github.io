@@ -75,7 +75,7 @@ section {
 }
 
 .header {
-  background: url("home-bg.webp") no-repeat;
+  background: url("/assets/home-bg.webp") no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -353,6 +353,11 @@ section {
   color: #130f40;
 }
 
+.products .box-container .box .content .price {
+  color: #130f40;
+  font-size: 1.4rem;
+}
+
 .products .box-container .box .content p {
   font-size: 1.5rem;
   color: #666;
@@ -424,11 +429,22 @@ section {
           transform: rotate(360deg);
 }
 
+.products .products-detail .box img {
+  height: 30rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .products .products-detail .box h3 {
   color: #ff7800;
   padding: 1rem 0;
   font-size: 3rem;
   font-family: 'Merienda One', sans-serif;
+}
+
+.products .products-detail .box .price {
+  font-size: 1.5rem;
+  color: #130f40;
 }
 
 .products .products-detail .box p {
@@ -575,10 +591,6 @@ section {
   padding: 1rem 0;
 }
 
-.blogs .box-container .box .content .button {
-  width: 20rem;
-}
-
 .contact .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -650,8 +662,8 @@ section {
 .footer .box-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   gap: 1.5rem;
 }
 
@@ -663,6 +675,42 @@ section {
 
 .footer .box-container .box .logo i {
   color: #ff7800;
+}
+
+.footer .box-container .box form .input-box {
+  width: 80%;
+  padding: 1rem 1.2rem;
+  margin: 1rem 0;
+  border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  background: none;
+  color: #130f40;
+  font-size: 1.8rem;
+  text-transform: none;
+}
+
+.footer .box-container .box form .input-box:focus {
+  background: #fff;
+}
+
+.footer .box-container .box form .input-box::-webkit-input-placeholder {
+  color: #130f40;
+}
+
+.footer .box-container .box form .input-box:-ms-input-placeholder {
+  color: #130f40;
+}
+
+.footer .box-container .box form .input-box::-ms-input-placeholder {
+  color: #130f40;
+}
+
+.footer .box-container .box form .input-box::placeholder {
+  color: #130f40;
+}
+
+.footer .box-container .box form .button {
+  width: 20rem;
 }
 
 .footer .box-container .box p {
